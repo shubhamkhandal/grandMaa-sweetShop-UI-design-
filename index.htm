@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GrandMaa's Sweethub</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg  px-4">
+        <a href="#" class="navbar-brand">
+          <img src="./img/iconfinder_Coffee_566024.png" alt="logo" width="60" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav text-capitalize mx-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">about</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">store</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">order</a></li>
+          </ul>
+
+          <div class="nav-info-items d-none d-lg-flex">
+            <!--singl info-->
+            <div
+              class="nav-info align-items-center d-flex justify-content-between mx-lg-5"
+            >
+              <span class="info-icon mx-lg-3">
+                <i class="fas fa-phone"></i>
+              </span>
+              <p class="mb-0">+ 014 456 789</p>
+            </div>
+            <!--second info-->
+            <div id="cart-info" class="nav-info align-items-center cart-info 
+            d-flex justify-content-between mx-lg-5 px-1">
+              <span class="cart-info_icon mr-lg-3">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+                <p class="mb-0 text-capitalize">
+                    <span id="item-count">2</span>item - 5
+                    <span class="item-total">10.49</span>
+                </p>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- header banner-->
+    <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+            <div class="col-10 mx-auto text-center banner">
+                <h1 class="text-capitalize">welcome to
+                     <strong class="banner-title">grandmaa's</strong></h1>
+                <a href="#store" class="btn btn-outline-dark text-uppercase my-2">explore</a>
+            </div>
+    <!--cart box------------------->
+           <div class="cart" id="cart">
+             <div class="cart-product d-flex jusitfy-content-between text-capitalize my-3">
+               <img src="./img/11.jpg" alt="coffee" class="img-fluid rounded-circle" width="70"
+               id="products-img">
+               <div class="products-text">
+                  <p id="cart-product-title" class="font-weight-bold mb-0">
+                    coffee-biscuit
+                  </p>
+                    <span>$</span>
+                    <span id="cart-product-price" class="cart-product-price mb-0">
+                      10.50
+                    </span>
+                  
+               </div>
+               <a href="#" id="cart-product-remove" class="cart-product-remove">
+                 <i class="fas fa-trash"></i>
+               </a>
+             </div>
+
+        <!---second product------------------>
+        <div class="cart-product d-flex jusitfy-content-between text-capitalize my-3">
+            <img src="./img/1.jpg" alt="coffee" class="img-fluid rounded-circle" width="70"
+            id="products-img">
+            <div class="products-text">
+               <p id="cart-product-title" class="font-weight-bold mb-0">
+                 coffee-biscuit
+               </p>
+                 <span>$</span>
+                 <span id="cart-product-price" class="cart-product-price mb-0">
+                   10.50
+                 </span>
+               
+            </div>
+            <a href="#" id="cart-product-remove" class="cart-product-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>  
+        <!--total product -->
+           <div class="cart-total-container d-flex justify-content-around
+             text-capitalize mt-5">
+             <h5>total</h5>
+             <h5>$ <b id="cart-total" class="font-weight-bold">11.00</b></h5>
+           </div>
+           <!--cart button-->
+           <div class="cart-button-container mt-3 d-flex justify-content-between">
+             <a href="#" id="clear-cart" class="btn btn-dark text-uppercase">
+               clear cart</a>
+               <a href="#" id="checkout-cart" class="btn btn-outline-info text-uppercase">
+                  check out</a>  
+           </div>
+        </div>
+
+        </div>
+    </div>
+    </header>
+
+<!--about--------------------------->
+    <section class="about  py-5" id="about">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-10 col-md-6 mx-auto my-5">
+                    <h1 class="text-capitalize">about 
+                        <strong class="banner-title">us</strong>
+                    </h1>
+                    <p class="text-muted my-4 w-75">A cupcake (also British English: fairy cake; Australian English:
+                         patty cake or cup cake) is a small cake designed to be eaten
+                          by one person. They are often baked in a small thin paper
+                           or aluminum cup. Like larger cakes, frosting and other 
+                           cake decorations, such as sprinkles, are common on cupcakes</p>
+                    <a href="#" class="btn btn-outline-secondary text-uppercase">explore</a>
+                </div>
+                <!--second column-->
+                <div class="col-10 col-md-6 mx-auto my-5">
+                   <div class="about-img_container"> 
+                        <img src="./img/pexels-photo-913136.jpeg" alt="cupcake" class="img-fluid cakeimg" />
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--store section-->
+    <section id="store" class="store bg-light py-5">
+       <div class="container">
+           <!--section title-->
+           <div class="row">
+               <div class="col-10 col-sm-6 mx-auto text-center">
+                   <h1 class="text-capitalize">our <strong class="banner-title text-warning">
+                       store
+                   </strong></h1>
+               </div>
+           </div>
+        <!--filter button-->
+           <div class="row">
+             <div class="col-lg-8 mx-auto d-flex justify-content-around felx-wrap py-2">
+                 <a href="#" class="btn btn-outline-dark text-uppercase filter-btn m-2"
+                 data-filter="all">all</a>
+                 <a href="#" class="btn btn-outline-dark text-uppercase filter-btn m-2"
+                 data-filter="all">cakes</a>
+                 <a href="#" class="btn btn-outline-dark text-uppercase filter-btn m-2"
+                 data-filter="all">cup cakes</a>
+                 <a href="#" class="btn btn-outline-dark text-uppercase filter-btn m-2"
+                 data-filter="all">coffee</a>
+                 <a href="#" class="btn btn-outline-dark text-uppercase filter-btn m-2"
+                 data-filter="all">sweets</a>    
+             </div>
+           </div>
+           <!--search box-->
+           <div class="row">
+               <div class="col-10 mx-auto col-md-6">
+                   <form action="#">
+                       <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                               <span class="input-group-text search-box" id="search-box">
+                                   <i class="fas fa-search search-icon"></i>
+                               </span>
+                           </div>
+                           <input type="search" class="form-control" placeholder="Products..." id="search-item">
+                       </div>
+                   </form>
+               </div>
+           </div>
+           <!--store products-->
+           <div class="row store-product" id="store-product">
+               <!--single product-->
+               <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-product coffee"
+                data-product="coffee">
+                   <div class="card single-product">
+                       <div class="img-container">
+                           <img src="./img/1.jpg" alt="coffee" class="card-img-top store-img"/>
+                           <span class="store-product-icon">
+                               <i class="fas fa-shopping-cart"></i>
+                           </span>
+                       </div>
+                       <div class="card-body">
+                         <div class="card-text d-flex justify-content-between text-capitalize">
+                             <h5 id="store-product-name">coffee</h5>
+                             <h5 id="store-product-value">$
+                                <b id="store-product-price" class="font-weight-bold">5</b></h5>
+                         </div>
+                       </div>
+                   </div>
+               </div>
+            <!--second item-->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-product coffee"
+            data-product="coffee">
+               <div class="card single-product">
+                   <div class="img-container">
+                       <img src="./img/11.jpg" alt="coffee" class="card-img-top store-img"/>
+                       <span class="store-product-icon">
+                           <i class="fas fa-shopping-cart"></i>
+                       </span>
+                   </div>
+                   <div class="card-body">
+                     <div class="card-text d-flex justify-content-between text-capitalize">
+                         <h5 id="store-product-name">coffee</h5>
+                         <h5 id="store-product-value">$
+                            <b id="store-product-price" class="font-weight-bold">5</b></h5>
+                     </div>
+                   </div>
+               </div>
+           </div> 
+        <!--third item-->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-product coffee"
+                data-product="coffee">
+                   <div class="card single-product">
+                       <div class="img-container">
+                           <img src="./img/pexels-photo-2074122.jpeg" alt="coffee" class="card-img-top store-img"/>
+                           <span class="store-product-icon">
+                               <i class="fas fa-shopping-cart"></i>
+                           </span>
+                       </div>
+                       <div class="card-body">
+                         <div class="card-text d-flex justify-content-between text-capitalize">
+                             <h5 id="store-product-name">coffee</h5>
+                             <h5 id="store-product-value">$
+                                <b id="store-product-price" class="font-weight-bold">5</b></h5>
+                         </div>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+    </section>
+<!--services ------->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <!--single services-->
+        <div class="col-md-4 text-center my-3">
+          <img src="./img/bread coffee icon.png" alt="bread coffe"/>
+          <h6 class="text-uppercase my-3 services-title">coffee bread</h6>
+          <p class="w-75 mx-auto text-left services-text">Brew coffee goes well with a slice of bread with cream cheese, while an espresso goes with Parmigiano cheese. Pav: For milky coffees,
+             I would recommend sweets, caramel, and chocolate. With filter coffee, 
+             muesli bars, oats, sesame, avocado.</p>
+        </div>
+
+        <div class="col-md-4 text-center my-3">
+            <img src="./img/bread icon.png" alt="bread coffe"/>
+            <h6 class="text-uppercase my-3 services-title"> bread</h6>
+            <p class="w-75 mx-auto text-left services-text">Once you have some butter on your
+               knife, apply it directly to your bread. Then, use your knife to move the
+                butter across your slice of bread in small, gradual strokes.
+                 Be careful not to apply too much pressure as you spread the butter or your
+                  bread may rip.</p>
+          </div>
+
+          <div class="col-md-4 text-center my-3">
+              <img src="./img/cupcake.png" alt="bread coffe"/>
+              <h6 class="text-uppercase my-3 services-title">cup cake</h6>
+              <p class="w-75 mx-auto text-left services-text">A cupcake is a small cake
+                 designed to serve one person, which may be baked in a small thin paper
+                  or aluminum cup. As with larger cakes, icing and other cake
+                   decorations such as fruit and candy may be applied.</p>
+            </div>
+      </div>
+    </div>
+  </section>
+<!-- order cakes-->
+ <section class="cakes py-5">
+   <div class="container">
+    <!--section title-->
+    <div class="row">
+      <div class="col-10 mx-auto text-center">
+        <h1 class="text-capitalize">order <strong class="banner-title text-warning">
+          cake
+        </strong></h1>
+      </div>
+    </div> 
+    
+    <div class="row ">
+      <!--single cake-->
+      <div class="col-11 col-md-4 col-lg-4 text-capitalize mx-auto text-center">
+        <h3 class="py-3 text-capitalize">birthday cake</h3>
+        <div class="text-muted">
+          <p class="my-3 ">birthday cake with a name.</p>
+          <p class="my-3 ">custom ingrediants</p>
+          <p class="my-3 ">custom size</p>
+          <p class="my-3 ">custom design</p>
+          <button class="btn btn-warning text-capitalize mb-3">
+            now order
+          </button>
+          <p class="text-lowercase mb-4">starting at $8</p>
+          <img src="./img/birthday cake bobo.png" alt="cake" class="img-fluid">
+        </div>
+      </div>
+
+     <!--second cake-->
+     <div class="col-11 col-md-4 col-lg-4 text-capitalize mx-auto text-center">
+        <h3 class="py-3 text-capitalize">wedding cake</h3>
+        <div class="text-muted">
+          <p class="my-3 ">wedding cake with a name.</p>
+          <p class="my-3 ">custom ingrediants</p>
+          <p class="my-3 ">custom size</p>
+          <p class="my-3 ">custom design</p>
+          <button class="btn btn-warning text-capitalize mb-3">
+            now order
+          </button>
+          <p class="text-lowercase mb-4">starting at $8</p>
+          <img src="./img/wedding cake.png" alt="cake" class="img-fluid">
+        </div>
+      </div>  
+
+     <!--third cake-->
+     <div class="col-11 col-md-4 col-lg-4 text-capitalize mx-auto text-center">
+        <h3 class="py-3 text-capitalize">century cake</h3>
+        <div class="text-muted">
+          <p class="my-3 ">century cake with a name or numbers.</p>
+          <p class="my-3 ">custom ingrediants</p>
+          <p class="my-3 ">custom size</p>
+          <p class="my-3 ">custom design</p>
+          <button class="btn btn-warning text-capitalize mb-3">
+            now order
+          </button>
+          <p class="text-lowercase mb-4">starting at $8</p>
+          <img src="./img/century cake.png" alt="cake" class="img-fluid" width="70%"/>
+        </div>
+      </div>
+
+    </div>
+   </div>
+
+ </section>
+ 
+ <!--footer-->
+ <footer>
+   <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-6 footer-title py-5">
+            <h1 class="text-capitalize text-center">
+              <b class="banner-title">grandpaa's</b>
+             </h1>
+             <div class="footer-icons mt-3 d-flex justify-content-around flex-wrap">
+               <a href="#" class="footer-icon">
+                 <i class="fas fa-facebook"></i>
+               </a>
+               <a href="#" class="footer-icon">
+                   <i class="fas fa-instagram"></i>
+                 </a>
+                 <a href="#" class="footer-icon">
+                     <i class="fas fa-youtube"></i>
+                   </a>
+             </div>
+     
+          </div>
+          <!--second column-->
+          <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+            <h3 class="mb-5">contact</h3>
+            <p class="d-flex flex-wrap">
+              <span class="mr-4 footer-icon">
+                <i class="fas fa-map"></i>
+              </span>
+              <span>jaipur, rajasthan, india</span>
+            </p>
+            <p class="d-flex flex-wrap">
+               <span class="mr-4 footer-icon">
+                 <i class="fas fa-phone"></i>
+               </span>
+               <span>123-456-789</span>
+             </p>
+             <p class="d-flex flex-wrap">
+                 <span class="mr-4 footer-icon">
+                   <i class="fas fa-envelope"></i>
+                 </span>
+                 <span>info@gmail.com</span>
+               </p>
+          </div> 
+     </div>
+   </div>
+ </footer>
+
+ <script>
+ document.getElementById('cart-info').addEventListener("click",function(){
+   const cart = document.getElementById("cart");
+   cart.classList.toggle('show-cart');
+   console.log(cart);
+ })
+
+
+
+
+ </script>
+    
+  </body>
+</html>
